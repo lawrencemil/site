@@ -20,13 +20,13 @@
       <div class="list-card example one">
         <div class="slack">
           <img src="https://cdn.discordapp.com/avatars/1324874201156292651/312ed343383d8e866641d1524e1579c8.webp?size=1024&width=1024&height=1024" alt="Profile picture of Larsy">
-          <span class="slackname">Larsy</span>
+          <span class="slackname">Temp</span>
           <span class="slacktime">2:20 PM</span><br />
           <span class="slackmessage">oh - 3:30 mate</span>
         </div>
         <div class="slack">
           <img src="https://cdn.discordapp.com/avatars/1324874201156292651/312ed343383d8e866641d1524e1579c8.webp?size=1024&width=1024&height=1024" alt="Profile picture of Larsy">
-          <span class="slackname">Larsy</span>
+          <span class="slackname">Temp</span>
           <span class="slacktime">2:19 PM</span><br />
           <span class="slackmessage">...?</span>
         </div>
@@ -58,7 +58,7 @@
       <div class="list-card example two">
         <div class="slack">
           <img src="https://cdn.discordapp.com/avatars/1324874201156292651/312ed343383d8e866641d1524e1579c8.webp?size=1024&width=1024&height=1024" alt="Profile picture of Larsy">
-          <span class="slackname">Larsy</span>
+          <span class="slackname">Temp</span>
           <span class="slacktime">2:20 PM</span><br />
           <span class="slackmessage">oh - 3:30 mate</span>
         </div>
@@ -84,47 +84,6 @@
       </div>
     </div>
   </div>
-  <footer>
-    <p>
-      {{ _md('footer.note') }}
-    </p>
-    <p>
-      {{ _md('footer.warning') }}
-    </p>
-    <p>
-    </p>
-
-    <section class="other-languages">
-      <p>
-        {{ _('footer.languages') }}
-      </p>
-
-      <ul>
-      {% for locale in locales %}
-        <li
-          ><a
-            href="{%- relocalizePath locale.path, page.url -%}"
-            class="lang-chooser"
-            data-lang="{{ locale.path }}"
-            hreflang="{{ locale.path }}"
-          >{{ locale.name }}</a
-        ></li>
-      {% endfor %}
-      </ul>
-    </section>
-
-    <script>
-      const langChoosers = document.querySelectorAll('.lang-chooser');
-
-      for (const langChooser of langChoosers) {
-        const lang = langChooser.dataset.lang;
-
-        langChooser.addEventListener('click', (evt) => {
-          localStorage.setItem('lang', lang);
-        });
-      }
-    </script>
-  </footer>
 </div>
 
 <div id="preloadimg"></div>
