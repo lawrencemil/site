@@ -33,4 +33,11 @@ test.describe('theme switcher', () => {
     const footerBackgroundColor = await page.evaluate(() => getComputedStyle(document.querySelector('footer')).backgroundColor);
     expect(footerBackgroundColor).toBe('rgb(238, 238, 238)');
   });
+
+  test('should apply correct styles for dark mode in footer', async ({ page }) => {
+    await page.emulateMedia({ colorScheme: 'dark' });
+    await page.reload();
+    const footerColor = await page.evaluate(() => getComputedStyle(document.querySelector('footer')).color);
+    expect(footerColor).toBe('rgb(224, 224, 224)');
+  });
 });

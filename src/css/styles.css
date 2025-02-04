@@ -544,3 +544,45 @@ h1.name {
     color: #e0e0e0;
   }
 }
+
+/* Update overall UI styles to make it more like Discord */
+body {
+  background-color: #36393f;
+  color: #dcddde;
+}
+
+a {
+  color: #7289da;
+}
+
+footer {
+  background-color: #2f3136;
+  color: #dcddde;
+}
+
+.list-card.example {
+  background: #40444b;
+  box-shadow: -20px 20px 60px #2c2f33, 20px -20px 60px #40444b;
+}
+
+.slack .slackname,
+.slack .slacktime,
+.slack .slackmessage {
+  color: #dcddde;
+}
+
+.card {
+  background-color: #40444b;
+}
+
+.card-active,
+.card:hover {
+  background-color: #4f545c;
+  box-shadow: 0px 5px 50px -8px #2c2f33;
+}
+
+.other-languages p,
+.other-languages ul,
+.other-languages li {
+  color: #dcddde;
+}
