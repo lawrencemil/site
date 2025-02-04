@@ -48,3 +48,14 @@ yarn update-snapshots # if not, update your snapshots!
 - the base language is English
 
 Changed base strings? `yarn strings:push`. Updated translations? `yarn strings:pull`.
+
+### Deployment
+
+#### Netlify
+
+To deploy to Netlify, you can use the existing `netlify.toml` configuration file. The build command is `yarn build` and the output directory is `build/`.
+
+#### Vercel
+
+To deploy to Vercel, you can use the `vercel.json` configuration file. The build command is `yarn build` and the output directory is `build/`.
+
