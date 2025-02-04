@@ -504,3 +504,43 @@ h1.name {
     margin-top: 80px;
   }
 }
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+
+  .list-card.example {
+    background: #2c2c2c;
+    box-shadow: -20px 20px 60px #1a1a1a, 20px -20px 60px #2c2c2c;
+  }
+
+  .slack .slackname,
+  .slack .slacktime,
+  .slack .slackmessage {
+    color: #e0e0e0;
+  }
+
+  .card {
+    background-color: #2c2c2c;
+  }
+
+  .card-active,
+  .card:hover {
+    background-color: #3a3a3a;
+    box-shadow: 0px 5px 50px -8px #1a1a1a;
+  }
+
+  .other-languages p,
+  .other-languages ul,
+  .other-languages li {
+    color: #e0e0e0;
+  }
+}

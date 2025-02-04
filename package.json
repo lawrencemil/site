@@ -9,7 +9,7 @@
   "type": "commonjs",
   "scripts": {
     "11ty": "yarn esr --cache ./node_modules/.bin/eleventy --config ./.eleventy.ts",
-    "build": "yarn 11ty",
+    "build": "yarn 11ty && cp src/js/themeSwitcher.js build/js/",
     "serve": "yarn 11ty --serve --port=8123",
     "check-snapshots": "act -j check-snapshots -P ubuntu-latest=mcr.microsoft.com/playwright:v1.16.3 -W ./.github/local-workflows --reuse --artifact-server-path build-artifacts; yarn post-snapshots",
     "update-snapshots": "act -j update-snapshots -P ubuntu-latest=mcr.microsoft.com/playwright:v1.16.3 -W ./.github/local-workflows --reuse --artifact-server-path build-artifacts; yarn post-snapshots",
